@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <form>
+          <div class="display">
+            <input type="text" class="result" readonly />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="AC"
+              class="operator"
+              onclick="deleteAll()"
+            />
+            <input
+              type="button"
+              value="DE"
+              class="operator"
+              onclick="deleteOneElement()"
+            />
+            <input
+              type="button"
+              value="."
+              class="operator data"
+              onclick="display()"
+            />
+            <input
+              type="button"
+              value="/"
+              class="operator data"
+              onclick="display()"
+            />
+          </div>
+          <div>
+            <input type="button" value="7" class="data" onclick="display()" />
+            <input type="button" value="8" class="data" onclick="display()" />
+            <input type="button" value="9" class="data" onclick="display()" />
+            <input
+              type="button"
+              value="*"
+              class="operator data"
+              onclick="display()"
+            />
+          </div>
+          <div>
+            <input type="button" value="4" class="data" onclick="display()" />
+            <input type="button" value="5" class="data" onclick="display()" />
+            <input type="button" value="6" class="data" onclick="display()" />
+            <input
+              type="button"
+              value="-"
+              class="operator data"
+              onclick="display()"
+            />
+          </div>
+          <div>
+            <input type="button" value="1" class="data" onclick="display()" />
+            <input type="button" value="2" class="data" onclick="display()" />
+            <input type="button" value="3" class="data" onclick="display()" />
+            <input
+              type="button"
+              value="+"
+              class="operator data"
+              onclick="display()"
+            />
+          </div>
+          <div>
+            <input type="button" value="00" class="data" onclick="display()" />
+            <input type="button" value="0" class="data" onclick="display()" />
+            <input
+              type="button"
+              value="="
+              class="equal operator"
+              onclick="Calculator()"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
